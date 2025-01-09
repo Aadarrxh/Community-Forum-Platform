@@ -1,4 +1,6 @@
-<!DOCTYPE html> 
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -104,18 +106,18 @@
       <div class="flex-1 flex items-center justify-center bg-background p-8">
         <div class="w-full max-w-md">
           <h1 class="text-2xl font-semibold text-primary mb-4">Create Account</h1>
-          <form>
+          <form action="RegisterServlet" method="POST">
             <div class="mb-4">
               <label for="username" class="block text-muted-foreground text-sm font-medium">Username</label>
-              <input type="text" id="username" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your username" required />
+              <input type="text" id="username" name="username" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your username" required />
             </div>
             <div class="mb-4">
               <label for="email" class="block text-muted-foreground text-sm font-medium">Email</label>
-              <input type="email" id="email" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your email" required />
+              <input type="email" id="email" name="email" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your email" required />
             </div>
             <div class="mb-4">
               <label for="country" class="block text-muted-foreground text-sm font-medium">Country</label>
-              <select id="country" class="border border-zinc-300 rounded-lg p-2 w-full" required>
+              <select id="country" name="country" class="border border-zinc-300 rounded-lg p-2 w-full" required>
                 <option value="" disabled selected>Select your country</option>
                 <option value="India">India</option>
                 <option value="Nepal">Nepal</option>
@@ -135,13 +137,13 @@
             </div>
             <div class="mb-4">
               <label for="password" class="block text-muted-foreground text-sm font-medium">Password</label>
-              <input type="password" id="password" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your password" required />
+              <input type="password" id="password" name="password" class="border border-zinc-300 rounded-lg p-2 w-full" placeholder="Enter your password" required />
             </div>
             <button type="submit" class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg w-full">Sign Up</button>
           </form>
           <p class="mt-4 text-sm text-muted-foreground">
             Already have an account? 
-            <a href="Login.html" class="text-primary hover:underline">Log in here</a>
+            <a href="Login.jsp" class="text-primary hover:underline">Log in here</a>
           </p>
         </div>
       </div>
@@ -155,5 +157,3 @@
     </div>
   </body>
 </html>
-
-

@@ -54,6 +54,18 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", country=" + country + ", password="
 				+ password + "]";
 	}
+	public void setRelationshipDate(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setPosition(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setProfilePic(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

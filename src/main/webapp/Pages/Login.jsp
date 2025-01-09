@@ -23,7 +23,7 @@
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
-            <div class="brand">My Forum</div>
+            <div class="brand">Agora</div>
         </div>
         <!-- Login Form -->
         <div class="login-box">
